@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 using DG.Tweening;
+using UnityEditor;
 
 namespace Screen
 {
@@ -18,6 +19,7 @@ namespace Screen
         public ScreenType screenType;
 
         public List<Transform> listOfObjects;
+        public List<Typper> listOfPhrases;
 
         public bool startHidden = false;
 
@@ -25,9 +27,18 @@ namespace Screen
         public float animationDuration = .03f;
         public float delayBetweenObjects = .05f;
 
+        void Start()
+        {
+            if (startHidden)
+            {
+                HideObjects();
+            }
+        }
+
         [Button]
         protected virtual void Show()
         {
+            if (!EditorApplication.isPlaying) return;
             ShowObjects();
             Debug.Log("Show");
         }
@@ -35,6 +46,7 @@ namespace Screen
         [Button]
         protected virtual void Hide()
         {
+            if (!EditorApplication.isPlaying) return;
             HideObjects();
             Debug.Log("Hide");
         }
@@ -46,18 +58,28 @@ namespace Screen
 
         private void ShowObjects()
         {
-            for(int i = 0; i < listOfObjects.Count; i++)
+            for (int i = 0; i < listOfObjects.Count; i++)
             {
                 var obj = listOfObjects[i];
 
                 obj.gameObject.SetActive(true);
                 obj.DOScale(0, animationDuration).From().SetDelay(i * delayBetweenObjects);
             }
+            Invoke(nameof(StartType), delayBetweenObjects * listOfObjects.Count);
         }
 
         protected void ForceShowObjects()
         {
             listOfObjects.ForEach(i => i.gameObject.SetActive(true));
+        }
+
+        private void StartType()
+        {
+            for (int i = 0; i < listOfPhrases.Count; i++)
+            {
+                listOfPhrases[i].StartType();
+                var obj = listOfObjects[i];
+            }
         }
     }
 }
