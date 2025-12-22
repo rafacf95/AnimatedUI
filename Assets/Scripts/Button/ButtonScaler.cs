@@ -10,10 +10,10 @@ public class ButtonScaler : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public float finalScale = 1.2f;
     public float scaleDuration = .1f;
 
-    private Vector3 _defaultSacle;
+    [SerializeField]private Vector3 _defaultSacle;
     private Tween _currentTween;
 
-    void Start()
+    void Awake()
     {
         _defaultSacle = transform.localScale;
     }
