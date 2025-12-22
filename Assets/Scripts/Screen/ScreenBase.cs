@@ -5,7 +5,7 @@ using NaughtyAttributes;
 using DG.Tweening;
 using UnityEditor;
 
-namespace Screen
+namespace Screens
 {
     public enum ScreenType
     {
@@ -36,7 +36,7 @@ namespace Screen
         }
 
         [Button]
-        protected virtual void Show()
+        public virtual void Show()
         {
             if (!EditorApplication.isPlaying) return;
             ShowObjects();
@@ -44,7 +44,7 @@ namespace Screen
         }
 
         [Button]
-        protected virtual void Hide()
+        public virtual void Hide()
         {
             if (!EditorApplication.isPlaying) return;
             HideObjects();
