@@ -11,7 +11,8 @@ namespace Screens
     {
         MainMenu,
         Profile,
-        Settings
+        Settings,
+        Shop
     }
 
     public class ScreenBase : MonoBehaviour
