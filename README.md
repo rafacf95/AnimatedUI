@@ -3,20 +3,25 @@
 
 # AnimatedUI
 
-Este repositório é um projeto desenvolvido utilizando a **Unity Engine**.  
-Foi criado com foco em aprendizado e prática do desenvolvimento de animações para a UI. O projeto está licenciado sob a MIT License.
+Este repositório é um projeto Unity criado como parte do meu portfólio pessoal.
+Seu principal objetivo é demonstrar habilidades práticas na construção e animação de interfaces de usuário usando o Unity Engine e C#.
+
+O projeto prioriza uma estrutura limpa, componentes reutilizáveis ​​e animações de interface de usuário suaves, comumente usadas em jogos e aplicativos interativos. É distribuído sob a **MIT License**
 
 ## Visão Geral
 
-### Características Principais
+Este projeto demonstra:
 
-- Estrutura de projeto organizada seguindo padrões da Unity  
+- Técnicas de animação de interface do usuário usando Unity
+- Estrutura de projeto organizada e escalável, seguindo as melhores práticas do Unity
+- Uso de pacotes de interface do usuário e utilitários de terceiros
+- Separação clara entre recursos de interface do usuário, lógica e configuração
 
 ## Tecnologias e Ferramentas Utilizadas
 
--   Motor de jogo: Unity
--   Linguagem: C#
--   Git para controle de versão
+- **Game Engine:** Unity
+- **Linguagem de programação:** C#
+- **Controle de versão:** Git
 
 ## Como Baixar e Executar
 
@@ -36,13 +41,22 @@ Foi criado com foco em aprendizado e prática do desenvolvimento de animações 
 
 4.  Pressione **Play** para rodar o jogo.
 
+## Objetivo
+
+Este projeto tem como objetivo:
+
+- Demonstração de portfólio
+- Aprendizado e experimentação com animações de interface do usuário no Unity
+- Referência para padrões de animação de interface do usuário em projetos de pequeno a médio porte
+
 ## Autor
 
 **Rafael Freitas**  
 GitHub: https://github.com/rafacf95
 
 ## Licença
-Este projeto é distribuído sob a MIT License. Consulte o arquivo [LICENSE](https://github.com/rafacf95/AnimatedUI/blob/main/LICENSE) para mais detalhes
+Este projeto é distribuído sob a MIT License. 
+Consulte o arquivo [LICENSE](https://github.com/rafacf95/AnimatedUI/blob/main/LICENSE) para mais detalhes
 
 # Packages
 
