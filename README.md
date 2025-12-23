@@ -46,5 +46,5 @@ Este projeto é distribuído sob a MIT License. Consulte o arquivo [LICENSE](htt
 
 # Packages
 
-[Dark UI](https://assetstore.unity.com/packages/2d/gui/dark-theme-ui-199010)
+[Dark UI](https://assetstore.unity.com/packages/2d/gui/dark-theme-ui-199010)\
 [NaughtyAttributes](https://assetstore.unity.com/packages/tools/utilities/naughtyattributes-129996)
